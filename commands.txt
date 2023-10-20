@@ -1,0 +1,10 @@
+npm i next-auth
+openssl rand -base64 32 (put result in .env.local file like "NEXTAUTH_SECRET={result}}" )
+
+setup auth provider over github:
+https://github.com/settings/applications/new
+Homepage URL
+http://localhost:3000/
+Authorization callback URL
+http://localhost:3000/api/auth/callback/github
+get Client ID and generate client secret and put it in .env.local as GITHUB_SECRET=.... GITHUB_ID=Client ID
